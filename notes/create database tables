@@ -1,0 +1,14 @@
+crate database thedarkstore;
+
+use database thedarkstore;
+
+create table CUSTOMER (customerId int (50) not null auto_increment primary key, firstName varchar(35), secondName varchar(50), street varchar(50),
+zipcode varchar(20), city varchar (50), state varchar(50), age varchar (3), emailAddress varchar (50), password varchar(30));
+
+
+create table PRODUCTS (id int (50) not null auto_increment primary key, category varchar(50), productName varchar(50),
+brand varchar(20), colour varchar (50), unitCost varchar(50), weight varchar (30), productId varchar(50),
+stock varchar (50));
+
+
+spring.datasource.url=jdbc:mysql://${MYSQL_HOST:localhost}:3306/thedarkstore

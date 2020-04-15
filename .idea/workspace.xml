@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="9bc9289a-21af-45ff-ac9a-36bc506d7042" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1aazIyjJmB5bXRlCEnW7FcRo6O5" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RunManager">
+    <configuration name="TheDarkStoreApplication" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.shop.TheDarkStoreApplication" />
+      <module name="theDarkShop-SpringBoot-master" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.shop.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9bc9289a-21af-45ff-ac9a-36bc506d7042" name="Default Changelist" comment="" />
+      <created>1586988417103</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1586988417103</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="517" y="111" key="#TheDarkStoreApplication" timestamp="1586989753895">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="517" y="111" key="#TheDarkStoreApplication/0.0.1600.860@0.0.1600.860" timestamp="1586989753895" />
+    <state x="254" y="85" width="1092" height="775" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1586989913672">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="254" y="85" width="1092" height="775" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1600.860@0.0.1600.860" timestamp="1586989913672" />
+    <state x="529" y="236" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1586989633754">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="529" y="236" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1600.860@0.0.1600.860" timestamp="1586989633754" />
+    <state x="648" y="320" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1586989256644">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="648" y="320" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1600.860@0.0.1600.860" timestamp="1586989256644" />
+    <state x="380" y="86" key="#com.intellij.openapi.projectRoots.ui.ProjectJdksEditor" timestamp="1586989254607">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="380" y="86" key="#com.intellij.openapi.projectRoots.ui.ProjectJdksEditor/0.0.1600.860@0.0.1600.860" timestamp="1586989254607" />
+    <state x="580" y="186" key="FileChooserDialogImpl" timestamp="1586989594416">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="580" y="186" key="FileChooserDialogImpl/0.0.1600.860@0.0.1600.860" timestamp="1586989594416" />
+    <state width="1557" height="232" key="GridCell.Tab.0.bottom" timestamp="1586989869455">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1557" height="232" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1586989869455" />
+    <state width="1557" height="232" key="GridCell.Tab.0.center" timestamp="1586989869455">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1557" height="232" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1586989869455" />
+    <state width="1557" height="232" key="GridCell.Tab.0.left" timestamp="1586989869454">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1557" height="232" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1586989869454" />
+    <state width="1557" height="232" key="GridCell.Tab.0.right" timestamp="1586989869455">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1557" height="232" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1586989869455" />
+    <state x="280" y="5" key="SettingsEditor" timestamp="1586989596174">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="280" y="5" key="SettingsEditor/0.0.1600.860@0.0.1600.860" timestamp="1586989596174" />
+    <state x="496" y="255" key="com.intellij.ide.util.TipDialog" timestamp="1586989738991">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="496" y="255" key="com.intellij.ide.util.TipDialog/0.0.1600.860@0.0.1600.860" timestamp="1586989738991" />
+    <state x="504" y="324" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1586989452739">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="504" y="324" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1600.860@0.0.1600.860" timestamp="1586989452739" />
+  </component>
+</project>
