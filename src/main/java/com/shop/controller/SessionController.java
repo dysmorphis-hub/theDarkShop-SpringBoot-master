@@ -15,9 +15,9 @@ import java.io.IOException;
 public class SessionController {
 
     @Autowired
-    ISessionRepository sessionRepository;
+    private ISessionRepository sessionRepository;
     @Autowired
-    SessionService sessionService;
+    private SessionService sessionService;
 
     @PostMapping("/logout")
     public String logout (Customer customer, Session session) throws IOException {

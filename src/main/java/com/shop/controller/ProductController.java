@@ -18,8 +18,8 @@ import java.io.*;
 public class ProductController {
 
     @Autowired
-    IProductRepository productRepository;
-    byte[] uploadedImageAsByte;
+    private IProductRepository productRepository;
+    private byte[] uploadedImageAsByte;
 
     //Get Request for admins to add a specific product to database
     @GetMapping("/addProduct")

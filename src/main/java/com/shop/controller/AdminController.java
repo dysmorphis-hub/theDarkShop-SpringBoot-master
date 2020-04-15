@@ -17,9 +17,9 @@ import java.util.List;
 public class AdminController {
 
     @Autowired
-    ISessionRepository sessionRepository;
+    private ISessionRepository sessionRepository;
     @Autowired
-    ICustomerRepository customerRepository;
+    private ICustomerRepository customerRepository;
 
     //Get Request for clearing all customers and current active sessions out of the database
     @GetMapping("/clearSessionsAndCustomers")

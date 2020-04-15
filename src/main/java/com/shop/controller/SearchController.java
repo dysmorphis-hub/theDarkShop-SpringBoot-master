@@ -26,11 +26,11 @@ import java.util.stream.Collectors;
 public class SearchController {
 
     @Autowired
-    IProductRepository productRepository;
+    private IProductRepository productRepository;
     @Autowired
-    ISessionRepository sessionRepository;
-    List<Product> allProducts = new ArrayList<>();
-    String searchString = "";
+    private ISessionRepository sessionRepository;
+    private List<Product> allProducts = new ArrayList<>();
+    private String searchString = "";
 
     @PostMapping("/search")
     public String searchProducts(Search search){
