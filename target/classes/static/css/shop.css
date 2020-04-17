@@ -1,10 +1,8 @@
 body{
 
-   /* background-image: url("https://cdn.pixabay.com/photo/2015/11/22/19/04/crowd-1056764_960_720.jpg");*/
-
     background-image: url('../images/crowd.jpg');
     background-size: float;
-    /*background-size: cover;*/
+
     opacity: unset;
     height: 100%;
     overflow: auto;

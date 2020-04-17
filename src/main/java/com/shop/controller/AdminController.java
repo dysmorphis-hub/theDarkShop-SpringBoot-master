@@ -31,6 +31,24 @@ public class AdminController {
         return "login";
     }
 
+    //Get Request for clearing all current active sessions out of the database
+    @GetMapping("/clearSessions")
+    public String clearSessions(Customer customer, Search search) {
+
+        sessionRepository.deleteAll();
+
+        return "login";
+    }
+
+    //Get Request for clearing all customers out of the database
+    @GetMapping("/clearCustomers")
+    public String clearCustomers(Customer customer, Search search) {
+
+        customerRepository.deleteAll();
+
+        return "login";
+    }
+
     @GetMapping("/listAll")
     public String listAllCustomers(Customer customer, Model model, Search search) {
 
