@@ -8,6 +8,7 @@ import com.shop.model.search.Search;
 import com.shop.model.session.Session;
 import com.shop.services.SessionService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.Errors;
@@ -18,6 +19,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import javax.validation.Valid;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.function.Function;
 import java.util.stream.Collectors;
@@ -79,24 +81,28 @@ public class ShopController {
     public String lobbyLogin(Customer customer, Model model, Search search, Session session) throws IOException {
 
         //query customer in customer database
-        Customer storedcustomer = customerRepository.findByEmailAddress(customer.getEmailAddress());
+        Customer ifStoredCustomer = customerRepository.findByEmailAddress(customer.getEmailAddress());
 
         //check if already a session for this customer exists if the customer is already logged in
         List<Session> loadAllSessions = sessionRepository.findAll();
-        List<Session> filteredSessions = loadAllSessions.
-                stream().
-                filter(s -> s.getCustomerEmail().equals(storedcustomer.getEmailAddress())).
-                collect(Collectors.toList());
+        List<Session> filteredSession = new ArrayList<>();
+
+        if(!loadAllSessions.isEmpty()){
+            filteredSession = loadAllSessions.
+                    stream().
+                    filter(s -> s.getCustomerEmail().equals(ifStoredCustomer.getEmailAddress())).
+                    collect(Collectors.toList());
+        }
 
         //the list of filtered Sessions is empty unless there is a login already
-        if(filteredSessions.isEmpty()) {
+        if(filteredSession.isEmpty()) {
 
             //if the customer exists (Object !=null) a Session is created
-            if (storedcustomer != null){
+            if (ifStoredCustomer != null){
 
                 //add customer to current session
-                session.setSessionCustomer(storedcustomer);
-                session.setSessionCustomerEmail(storedcustomer.getEmailAddress());
+                session.setSessionCustomer(ifStoredCustomer);
+                session.setSessionCustomerEmail(ifStoredCustomer.getEmailAddress());
                 //save current session as object in the session repository
                 sessionRepository.save(session);
                 //write cookie object
@@ -106,19 +112,20 @@ public class ShopController {
                 return "registerEmailError";
             }
 
-        }else if (filteredSessions.size()<2){
+        }else if (filteredSession.size() == 1) {
 
-            if(sessionService.checkIfCookieExists()) {
+            if (sessionService.checkIfCookieExists()) {
 
-                if (sessionService.readEmailFromCookie().equals(storedcustomer.getEmailAddress())) {
+                if (sessionService.readEmailFromCookie().equals(ifStoredCustomer.getEmailAddress())) {
                     return "redirect:/lobby";
                 }
-            }else{
-                session.setSessionCustomer(storedcustomer);
-                session.setSessionCustomerEmail(storedcustomer.getEmailAddress());
+            } else {
+                session.setSessionCustomer(ifStoredCustomer);
+                session.setSessionCustomerEmail(ifStoredCustomer.getEmailAddress());
                 sessionService.writeCookieFile(session);
             }
         }
+
         return "redirect:/lobby";
     }
 
