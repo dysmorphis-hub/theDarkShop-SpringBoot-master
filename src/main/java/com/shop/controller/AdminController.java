@@ -54,11 +54,7 @@ public class AdminController {
 
         List<Customer> customerList = customerRepository.findAll();
         model.addAttribute("customers", customerList);
-
-        if(1==1){
-            return "listAll";
-        }
-
+        
         return "listAll";
     }
 
